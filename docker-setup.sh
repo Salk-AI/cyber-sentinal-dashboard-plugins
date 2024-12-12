@@ -17,7 +17,9 @@ NC='\033[0m'
 
 function start() {
     echo -e "${GREEN}Starting Docker containers...${NC}"
-    bash "$DEV_SH_PATH" "$WZ_HOME" up
+    cd "$DEV_SH_PATH"
+    chmod +x dev.sh
+    bash dev.sh "$WZ_HOME" up
     echo -e "${GREEN}Docker containers started successfully.${NC}"
     docker exec -it os-dev-2130-osd-1 yarn start -no-base-path
 }
@@ -26,6 +28,7 @@ function start() {
 function stop() {
     echo -e "${YELLOW}Stopping Docker containers...${NC}"
     cd "$DEV_SH_PATH"
+    chmod +x dev.sh
     bash ./dev.sh "$WZ_HOME" down
     echo -e "${GREEN}Docker containers stopped successfully.${NC}"
 }
