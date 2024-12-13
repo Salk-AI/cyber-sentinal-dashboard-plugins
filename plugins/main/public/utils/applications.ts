@@ -58,12 +58,12 @@ export const fileIntegrityMonitoring = {
   category: 'wz-category-endpoint-security',
   id: 'file-integrity-monitoring',
   title: i18n.translate('wz-app-file-integrity-monitoring-title', {
-    defaultMessage: 'File Integrity Monitoring',
+    defaultMessage: 'test',
   }),
   breadcrumbLabel: i18n.translate(
     'wz-app-file-integrity-monitoring-breadcrumbLabel',
     {
-      defaultMessage: 'File Integrity Monitoring',
+      defaultMessage: 'test',
     },
   ),
   description: i18n.translate('wz-app-file-integrity-monitoring-description', {
@@ -105,10 +105,10 @@ export const malwareDetection = {
   category: 'wz-category-endpoint-security',
   id: 'malware-detection',
   title: i18n.translate('wz-app-malware-detection-title', {
-    defaultMessage: 'Malware Detection',
+    defaultMessage: 'test',
   }),
   breadcrumbLabel: i18n.translate('wz-app-malware-detection-breadcrumbLabel', {
-    defaultMessage: 'Malware Detection',
+    defaultMessage: 'test',
   }),
   description: i18n.translate('wz-app-malware-detection-description', {
     defaultMessage:
