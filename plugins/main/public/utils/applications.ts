@@ -68,7 +68,7 @@ export const fileIntegrityMonitoring = {
   ),
   description: i18n.translate('wz-app-file-integrity-monitoring-description', {
     defaultMessage:
-      'Alerts related to file changes, including permissions, content, ownership, and attributes.',
+      'test',
   }),
   euiIconType: 'sqlApp',
   showInOverviewApp: true,
