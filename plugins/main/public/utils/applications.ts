@@ -58,12 +58,12 @@ export const fileIntegrityMonitoring = {
   category: 'wz-category-endpoint-security',
   id: 'file-integrity-monitoring',
   title: i18n.translate('wz-app-file-integrity-monitoring-title', {
-    defaultMessage: 'File Integrity Monitoring',
+    defaultMessage: 'test',
   }),
   breadcrumbLabel: i18n.translate(
     'wz-app-file-integrity-monitoring-breadcrumbLabel',
     {
-      defaultMessage: 'File Integrity Monitoring',
+      defaultMessage: 'test',
     },
   ),
   description: i18n.translate('wz-app-file-integrity-monitoring-description', {
@@ -158,10 +158,10 @@ export const threatHunting = {
   category: 'wz-category-threat-intelligence',
   id: 'threat-hunting',
   title: i18n.translate('wz-app-threat-hunting-title', {
-    defaultMessage: 'Threat Hunting',
+    defaultMessage: 'test',
   }),
   breadcrumbLabel: i18n.translate('wz-app-threat-hunting-breadcrumbLabel', {
-    defaultMessage: 'Threat Hunting',
+    defaultMessage: 'test',
   }),
   description: i18n.translate('wz-app-threat-hunting-description', {
     defaultMessage:

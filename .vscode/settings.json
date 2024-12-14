@@ -11,7 +11,7 @@
   "editor.trimAutoWhitespace": true,
   "editor.wordWrap": "on",
   "explorer.confirmDelete": true,
-  "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always"
 }
