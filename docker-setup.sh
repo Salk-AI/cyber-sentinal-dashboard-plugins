@@ -21,7 +21,7 @@ function start() {
     chmod +x dev.sh
     bash dev.sh "$WZ_HOME" up
     echo -e "${GREEN}Docker containers started successfully.${NC}"
-    docker exec -it os-dev-2130-osd-1 yarn start -no-base-path
+    docker exec -it os-dev-2130-osd-1 yarn start --no-base-path
 }
 
 
