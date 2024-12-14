@@ -7,6 +7,7 @@ fi
 
 DEV_SH_PATH="$(pwd)/docker/osd-dev"
 echo "DEV_SH_PATH: $DEV_SH_PATH"
+WZ_HOME="$(pwd)/plugins"
 echo "WZ_HOME: $WZ_HOME"
 
 
@@ -101,13 +102,13 @@ function main() {
         "stop")
             stop
             ;;
-        "run")
+        "up")
             start
             ;;
         "restart")
             restart
             ;;
-        "cleanup")
+        "clean")
             cleanup
             ;;
         *)
