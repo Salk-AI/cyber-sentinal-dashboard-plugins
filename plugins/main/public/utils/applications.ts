@@ -112,7 +112,7 @@ export const malwareDetection = {
   }),
   description: i18n.translate('wz-app-malware-detection-description', {
     defaultMessage:
-      'Verify that your systems are configured according to your security policies baseline.',
+      'test',
   }),
   euiIconType: 'indexRollupApp',
   order: 201,
@@ -140,7 +140,7 @@ export const configurationAssessment = {
   ),
   description: i18n.translate('wz-app-configuration-assessment-description', {
     defaultMessage:
-      'Scan your assets as part of a configuration assessment audit.',
+      'test',
   }),
   order: 200,
   euiIconType: 'managementApp',
@@ -165,7 +165,7 @@ export const threatHunting = {
   }),
   description: i18n.translate('wz-app-threat-hunting-description', {
     defaultMessage:
-      'Browse through your security alerts, identifying issues and threats in your environment.',
+      'test',
   }),
   euiIconType: 'securityAnalyticsApp',
   order: 300,
