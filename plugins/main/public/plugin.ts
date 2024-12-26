@@ -119,6 +119,10 @@ export class WazuhPlugin
     // Register the applications
     Applications.forEach(app => {
       const { category, id, title, redirectTo, order } = app;
+      // Skip registering the GitHub app
+      if (title === 'GitHub') {
+        return;
+      }
       core.application.register({
         id,
         title,

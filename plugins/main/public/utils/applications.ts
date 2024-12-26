@@ -105,10 +105,10 @@ export const malwareDetection = {
   category: 'wz-category-endpoint-security',
   id: 'malware-detection',
   title: i18n.translate('wz-app-malware-detection-title', {
-    defaultMessage: 'Malware Detection',
+    defaultMessage: 'Malware',
   }),
   breadcrumbLabel: i18n.translate('wz-app-malware-detection-breadcrumbLabel', {
-    defaultMessage: 'Malware Detection',
+    defaultMessage: 'Malware',
   }),
   description: i18n.translate('wz-app-malware-detection-description', {
     defaultMessage:
@@ -435,30 +435,30 @@ export const googleCloud = {
     }`,
 };
 
-export const github = {
-  category: 'wz-category-cloud-security',
-  id: 'github',
-  title: i18n.translate('wz-app-github-title', {
-    defaultMessage: 'GitHub',
-  }),
-  breadcrumbLabel: i18n.translate('wz-app-github-breadcrumbLabel', {
-    defaultMessage: 'GitHub',
-  }),
-  description: i18n.translate('wz-app-github-description', {
-    defaultMessage:
-      'Monitoring events from audit logs of your GitHub organizations.',
-  }),
-  euiIconType: LogoGitHub,
-  order: 502,
-  showInOverviewApp: true,
-  showInAgentMenu: true,
-  redirectTo: () =>
-    `/overview/?tab=github&tabView=dashboard${
-      store.getState()?.appStateReducers?.currentAgentData?.id
-        ? `&agentId=${store.getState()?.appStateReducers?.currentAgentData?.id}`
-        : ''
-    }`,
-};
+// export const github = {
+//   category: 'wz-category-cloud-security',
+//   id: 'github',
+//   title: i18n.translate('wz-app-github-title', {
+//     defaultMessage: 'Github',
+//   }),
+//   breadcrumbLabel: i18n.translate('wz-app-github-breadcrumbLabel', {
+//     defaultMessage: 'Github',
+//   }),
+//   description: i18n.translate('wz-app-github-description', {
+//     defaultMessage:
+//       't',
+//   }),
+//   euiIconType: LogoGitHub,
+//   order: 502,
+//   showInOverviewApp: true,
+//   showInAgentMenu: true,
+//   redirectTo: () =>
+//     `/overview/?tab=github&tabView=dashboard${
+//       store.getState()?.appStateReducers?.currentAgentData?.id
+//         ? `&agentId=${store.getState()?.appStateReducers?.currentAgentData?.id}`
+//         : ''
+//     }`,
+// };
 
 export const office365 = {
   category: 'wz-category-cloud-security',
@@ -852,7 +852,7 @@ export const Applications = [
   security,
   amazonWebServices,
   googleCloud,
-  github,
+  // github,
   office365,
   docker,
   endpointSummary,

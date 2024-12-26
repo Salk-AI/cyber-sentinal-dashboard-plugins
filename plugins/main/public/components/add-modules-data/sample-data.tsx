@@ -32,7 +32,7 @@ import {
   amazonWebServices,
   docker,
   fileIntegrityMonitoring,
-  github,
+  // github,
   googleCloud,
   malwareDetection,
   mitreAttack,
@@ -46,13 +46,13 @@ const sampleSecurityInformationApplication = [
   amazonWebServices.title,
   office365.title,
   googleCloud.title,
-  github.title,
+  // github.title,
 ];
 
 const sampleThreatDetectionApplication = [
   vulnerabilityDetection.title,
   virustotal.title,
-  docker.title,
+  // docker.title,
   mitreAttack.title,
 ];
 

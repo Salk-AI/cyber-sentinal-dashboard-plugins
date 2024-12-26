@@ -74,7 +74,7 @@ export const WAZUH_SAMPLE_ALERTS_CATEGORIES_TYPE_ALERTS = {
     { apache: true, alerts: 2000 },
     { web: true },
     { windows: { service_control_manager: true }, alerts: 1000 },
-    { github: true },
+    // { github: true },
   ],
   [WAZUH_SAMPLE_ALERTS_CATEGORY_AUDITING_POLICY_MONITORING]: [
     { rootcheck: true },
@@ -174,7 +174,7 @@ export enum WAZUH_MODULES_ID {
   CIS_CAT = 'ciscat',
   VIRUSTOTAL = 'virustotal',
   GDPR = 'gdpr',
-  GITHUB = 'github',
+  // GITHUB = 'github',
 }
 
 export enum WAZUH_MENU_MANAGEMENT_SECTIONS_ID {
