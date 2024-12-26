@@ -138,18 +138,18 @@ export function LastAlertsStat({ severity }: { severity: string }) {
               </EuiLink>
             </EuiToolTip>
           }
-          description={`${severityLabel[severity].label} severity`}
+          description={`${severityLabel[severity].label}`}
           descriptionElement='h3'
           titleColor={severityLabel[severity].color}
           textAlign='center'
         />
-        <EuiText size='xs' css='margin-top: 0.7vh'>
+        {/* <EuiText size='xs' css='margin-top: 0.7vh'>
           {'Rule level ' +
             severityLabel[severity].ruleLevelRange.minRuleLevel +
             (severityLabel[severity].ruleLevelRange.maxRuleLevel
               ? ' to ' + severityLabel[severity].ruleLevelRange.maxRuleLevel
               : ' or higher')}
-        </EuiText>
+        </EuiText> */}
       </RedirectAppLinks>
     </EuiFlexItem>
   );
