@@ -58,17 +58,17 @@ export const fileIntegrityMonitoring = {
   category: 'wz-category-endpoint-security',
   id: 'file-integrity-monitoring',
   title: i18n.translate('wz-app-file-integrity-monitoring-title', {
-    defaultMessage: 'test',
+    defaultMessage: 'File Integrity Monitoring',
   }),
   breadcrumbLabel: i18n.translate(
     'wz-app-file-integrity-monitoring-breadcrumbLabel',
     {
-      defaultMessage: 'test',
+      defaultMessage: 'File Integrity Monitoring',
     },
   ),
   description: i18n.translate('wz-app-file-integrity-monitoring-description', {
     defaultMessage:
-      'test',
+      'Alerts related to file changes, including permissions, content, ownership, and attributes.',
   }),
   euiIconType: 'sqlApp',
   showInOverviewApp: true,
@@ -112,7 +112,7 @@ export const malwareDetection = {
   }),
   description: i18n.translate('wz-app-malware-detection-description', {
     defaultMessage:
-      'test',
+      'Verify that your systems are configured according to your security policies baseline.',
   }),
   euiIconType: 'indexRollupApp',
   order: 201,
@@ -140,7 +140,7 @@ export const configurationAssessment = {
   ),
   description: i18n.translate('wz-app-configuration-assessment-description', {
     defaultMessage:
-      'test',
+      'Scan your assets as part of a configuration assessment audit.',
   }),
   order: 200,
   euiIconType: 'managementApp',
@@ -158,14 +158,14 @@ export const threatHunting = {
   category: 'wz-category-threat-intelligence',
   id: 'threat-hunting',
   title: i18n.translate('wz-app-threat-hunting-title', {
-    defaultMessage: 'test',
+    defaultMessage: 'Threat Hunting',
   }),
   breadcrumbLabel: i18n.translate('wz-app-threat-hunting-breadcrumbLabel', {
-    defaultMessage: 'test',
+    defaultMessage: 'Threat Hunting',
   }),
   description: i18n.translate('wz-app-threat-hunting-description', {
     defaultMessage:
-      'test',
+      'Browse through your security alerts, identifying issues and threats in your environment.',
   }),
   euiIconType: 'securityAnalyticsApp',
   order: 300,
@@ -261,10 +261,10 @@ const pciDss = {
   category: 'wz-category-security-operations',
   id: 'pci-dss',
   title: i18n.translate('wz-app-pci-dss-title', {
-    defaultMessage: 'PCI DSS',
+    defaultMessage: 'Fintech regulatory report',
   }),
   breadcrumbLabel: i18n.translate('wz-app-pci-dss-breadcrumbLabel', {
-    defaultMessage: 'PCI DSS',
+    defaultMessage: 'Fintech regulatory report',
   }),
   description: i18n.translate('wz-app-pci-dss-description', {
     defaultMessage:
@@ -286,10 +286,10 @@ const hipaa = {
   category: 'wz-category-security-operations',
   id: 'hipaa',
   title: i18n.translate('wz-app-hipaa-title', {
-    defaultMessage: 'HIPAA',
+    defaultMessage: 'Hospital regulatory report',
   }),
   breadcrumbLabel: i18n.translate('wz-app-hipaa-breadcrumbLabel', {
-    defaultMessage: 'HIPAA',
+    defaultMessage: 'Hospital regulatory report',
   }),
   description: i18n.translate('wz-app-hipaa-description', {
     defaultMessage:
