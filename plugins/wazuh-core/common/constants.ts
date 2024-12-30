@@ -20,14 +20,14 @@ export const PLUGIN_VERSION_SHORT = version.split('.').splice(0, 2).join('.');
 
 // Index patterns - Wazuh alerts
 export const WAZUH_INDEX_TYPE_ALERTS = 'alerts';
-export const WAZUH_ALERTS_PREFIX = 'wazuh-alerts-';
-export const WAZUH_ALERTS_PATTERN = 'wazuh-alerts-*';
+export const WAZUH_ALERTS_PREFIX = 'vg-alerts-';
+export const WAZUH_ALERTS_PATTERN = 'vg-alerts-*';
 
 // Job - Wazuh monitoring
 export const WAZUH_INDEX_TYPE_MONITORING = 'monitoring';
-export const WAZUH_MONITORING_PREFIX = 'wazuh-monitoring-';
-export const WAZUH_MONITORING_PATTERN = 'wazuh-monitoring-*';
-export const WAZUH_MONITORING_TEMPLATE_NAME = 'wazuh-agent';
+export const WAZUH_MONITORING_PREFIX = 'vg-monitoring-';
+export const WAZUH_MONITORING_PATTERN = 'vg-monitoring-*';
+export const WAZUH_MONITORING_TEMPLATE_NAME = 'vg-agent';
 export const WAZUH_MONITORING_DEFAULT_INDICES_SHARDS = 1;
 export const WAZUH_MONITORING_DEFAULT_INDICES_REPLICAS = 0;
 export const WAZUH_MONITORING_DEFAULT_CREATION = 'w';
@@ -37,26 +37,26 @@ export const WAZUH_MONITORING_DEFAULT_CRON_FREQ = '0 * * * * *';
 
 // Job - Wazuh statistics
 export const WAZUH_INDEX_TYPE_STATISTICS = 'statistics';
-export const WAZUH_STATISTICS_DEFAULT_PREFIX = 'wazuh';
+export const WAZUH_STATISTICS_DEFAULT_PREFIX = 'vg';
 export const WAZUH_STATISTICS_DEFAULT_NAME = 'statistics';
 export const WAZUH_STATISTICS_PATTERN = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}-*`;
 export const WAZUH_STATISTICS_TEMPLATE_NAME = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}`;
 export const WAZUH_STATISTICS_DEFAULT_INDICES_SHARDS = 1;
 export const WAZUH_STATISTICS_DEFAULT_INDICES_REPLICAS = 0;
-export const WAZUH_STATISTICS_DEFAULT_CREATION = 'w';
+export const WAZUH_STATISTICS_DEFAULT_CREATION = 'vg';
 export const WAZUH_STATISTICS_DEFAULT_STATUS = true;
 export const WAZUH_STATISTICS_DEFAULT_FREQUENCY = 900;
 export const WAZUH_STATISTICS_DEFAULT_CRON_FREQ = '0 */5 * * * *';
 
 // Wazuh vulnerabilities
-export const WAZUH_VULNERABILITIES_PATTERN = 'wazuh-states-vulnerabilities-*';
+export const WAZUH_VULNERABILITIES_PATTERN = 'vg-states-vulnerabilities-*';
 export const WAZUH_INDEX_TYPE_VULNERABILITIES = 'vulnerabilities';
 
 // Job - Wazuh initialize
-export const WAZUH_PLUGIN_PLATFORM_TEMPLATE_NAME = 'wazuh-kibana';
+export const WAZUH_PLUGIN_PLATFORM_TEMPLATE_NAME = 'vg-kibana';
 
 // Sample data
-export const WAZUH_SAMPLE_ALERT_PREFIX = 'wazuh-alerts-4.x-';
+export const WAZUH_SAMPLE_ALERT_PREFIX = 'vg-alerts-4.x-';
 export const WAZUH_SAMPLE_ALERTS_INDEX_SHARDS = 1;
 export const WAZUH_SAMPLE_ALERTS_INDEX_REPLICAS = 0;
 export const WAZUH_SAMPLE_ALERTS_CATEGORY_SECURITY = 'security';
@@ -1744,7 +1744,7 @@ hosts:
     },
     validate: SettingsValidator.isBoolean,
   },
-  'wazuh.updates.disabled': {
+  'vg.updates.disabled': {
     title: 'Check updates',
     description: 'Define if the check updates service is active.',
     category: SettingCategory.GENERAL,
@@ -1844,7 +1844,7 @@ hosts:
       return SettingsValidator.number(this.options.number)(value);
     },
   },
-  'wazuh.monitoring.creation': {
+  'vg.monitoring.creation': {
     title: 'Index creation',
     description:
       'Define the interval in which a new wazuh-monitoring index will be created.',
@@ -1887,7 +1887,7 @@ hosts:
       )(value);
     },
   },
-  'wazuh.monitoring.enabled': {
+  'vg.monitoring.enabled': {
     title: 'Status',
     description:
       'Enable or disable the wazuh-monitoring index creation and/or visualization.',
@@ -1919,7 +1919,7 @@ hosts:
     },
     validate: SettingsValidator.isBoolean,
   },
-  'wazuh.monitoring.frequency': {
+  'vg.monitoring.frequency': {
     title: 'Frequency',
     description:
       'Frequency, in seconds, of API requests to get the state of the agents and create a new document in the wazuh-monitoring index with this data.',
@@ -1956,7 +1956,7 @@ hosts:
       return SettingsValidator.number(this.options.number)(value);
     },
   },
-  'wazuh.monitoring.pattern': {
+  'vg.monitoring.pattern': {
     title: 'Index pattern',
     description: 'Default index pattern to use for Wazuh monitoring.',
     store: {
@@ -1991,7 +1991,7 @@ hosts:
       ),
     ),
   },
-  'wazuh.monitoring.replicas': {
+  'vg.monitoring.replicas': {
     title: 'Index replicas',
     description:
       'Define the number of replicas to use for the wazuh-monitoring-* indices.',
@@ -2028,7 +2028,7 @@ hosts:
       return SettingsValidator.number(this.options.number)(value);
     },
   },
-  'wazuh.monitoring.shards': {
+  'vg.monitoring.shards': {
     title: 'Index shards',
     description:
       'Define the number of shards to use for the wazuh-monitoring-* indices.',
