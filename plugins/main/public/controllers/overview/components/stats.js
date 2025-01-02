@@ -86,7 +86,7 @@ export const Stats = withErrorBoundary(
         <EuiPage>
           <EuiFlexGroup>
             <EuiFlexItem grow={false}>
-              {/* <EuiCard betaBadgeLabel='Agents summary' title=''>
+              <EuiCard betaBadgeLabel='Agents summary' title=''>
                 <VisualizationBasic
                   isLoading={this.state.loadingSummary}
                   type='donut'
@@ -109,7 +109,7 @@ export const Stats = withErrorBoundary(
                   noDataTitle='No results'
                   noDataMessage='No results were found.'
                 />
-              </EuiCard> */}
+              </EuiCard>
             </EuiFlexItem>
             <EuiFlexItem>
               <EuiCard betaBadgeLabel='Last 24 hours alerts' title=''>
