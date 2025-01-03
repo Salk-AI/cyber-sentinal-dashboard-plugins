@@ -55,7 +55,7 @@ export const SettingsAboutGeneralInfo = ({
           </EuiText>
         }
       />
-      <Section
+      {/* <Section
         title='Community'
         content={
           <div>
@@ -108,7 +108,7 @@ export const SettingsAboutGeneralInfo = ({
             </EuiFlexGroup>
           </div>
         }
-      />
+      /> */}
     </EuiFlexGroup>
   );
 };
