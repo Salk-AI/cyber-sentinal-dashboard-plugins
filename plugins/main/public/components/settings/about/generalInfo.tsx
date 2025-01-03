@@ -43,11 +43,11 @@ export const SettingsAboutGeneralInfo = ({
   return (
     <EuiFlexGroup gutterSize='l' direction='row' responsive>
       <Section
-        title={`Welcome to the ${pluginAppName}`}
+        title={`Welcome to the CyberSentinel ( Virtual Galaxy) Dashboard`}
         content={
           <EuiText size='m'>
             <p>
-              Dashboard provides management and monitoring capabilities, giving
+              Cyber Sentinal provides management and monitoring capabilities, giving
               users control over the infrastructure. You can monitor your agents
               status and configuration, query and visualize your alert data and
               monitor manager rules and configuration.
