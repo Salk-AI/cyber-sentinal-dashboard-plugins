@@ -20,14 +20,14 @@ export const PLUGIN_VERSION_SHORT = version.split('.').splice(0, 2).join('.');
 
 // Index patterns - Wazuh alerts
 export const WAZUH_INDEX_TYPE_ALERTS = 'alerts';
-export const WAZUH_ALERTS_PREFIX = 'vg-alerts-';
-export const WAZUH_ALERTS_PATTERN = 'vg-alerts-*';
+export const WAZUH_ALERTS_PREFIX = 'cyberSentinal-alerts-';
+export const WAZUH_ALERTS_PATTERN = 'cyberSentinal-alerts-*';
 
 // Job - Wazuh monitoring
 export const WAZUH_INDEX_TYPE_MONITORING = 'monitoring';
-export const WAZUH_MONITORING_PREFIX = 'vg-monitoring-';
-export const WAZUH_MONITORING_PATTERN = 'vg-monitoring-*';
-export const WAZUH_MONITORING_TEMPLATE_NAME = 'vg-agent';
+export const WAZUH_MONITORING_PREFIX = 'cyberSentinal-monitoring-';
+export const WAZUH_MONITORING_PATTERN = 'cyberSentinal-monitoring-*';
+export const WAZUH_MONITORING_TEMPLATE_NAME = 'cyberSentinal-agent';
 export const WAZUH_MONITORING_DEFAULT_INDICES_SHARDS = 1;
 export const WAZUH_MONITORING_DEFAULT_INDICES_REPLICAS = 0;
 export const WAZUH_MONITORING_DEFAULT_CREATION = 'w';
@@ -37,26 +37,26 @@ export const WAZUH_MONITORING_DEFAULT_CRON_FREQ = '0 * * * * *';
 
 // Job - Wazuh statistics
 export const WAZUH_INDEX_TYPE_STATISTICS = 'statistics';
-export const WAZUH_STATISTICS_DEFAULT_PREFIX = 'vg';
+export const WAZUH_STATISTICS_DEFAULT_PREFIX = 'cyberSentinal';
 export const WAZUH_STATISTICS_DEFAULT_NAME = 'statistics';
 export const WAZUH_STATISTICS_PATTERN = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}-*`;
 export const WAZUH_STATISTICS_TEMPLATE_NAME = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}`;
 export const WAZUH_STATISTICS_DEFAULT_INDICES_SHARDS = 1;
 export const WAZUH_STATISTICS_DEFAULT_INDICES_REPLICAS = 0;
-export const WAZUH_STATISTICS_DEFAULT_CREATION = 'vg';
+export const WAZUH_STATISTICS_DEFAULT_CREATION = 'cyberSentinal';
 export const WAZUH_STATISTICS_DEFAULT_STATUS = true;
 export const WAZUH_STATISTICS_DEFAULT_FREQUENCY = 900;
 export const WAZUH_STATISTICS_DEFAULT_CRON_FREQ = '0 */5 * * * *';
 
 // Wazuh vulnerabilities
-export const WAZUH_VULNERABILITIES_PATTERN = 'vg-states-vulnerabilities-*';
+export const WAZUH_VULNERABILITIES_PATTERN = 'cyberSentinal-states-vulnerabilities-*';
 export const WAZUH_INDEX_TYPE_VULNERABILITIES = 'vulnerabilities';
 
 // Job - Wazuh initialize
-export const WAZUH_PLUGIN_PLATFORM_TEMPLATE_NAME = 'vg-kibana';
+export const WAZUH_PLUGIN_PLATFORM_TEMPLATE_NAME = 'cyberSentinal-kibana';
 
 // Sample data
-export const WAZUH_SAMPLE_ALERT_PREFIX = 'vg-alerts-4.x-';
+export const WAZUH_SAMPLE_ALERT_PREFIX = 'cyberSentinal-alerts-4.x-';
 export const WAZUH_SAMPLE_ALERTS_INDEX_SHARDS = 1;
 export const WAZUH_SAMPLE_ALERTS_INDEX_REPLICAS = 0;
 export const WAZUH_SAMPLE_ALERTS_CATEGORY_SECURITY = 'security';
