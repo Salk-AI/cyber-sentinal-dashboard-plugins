@@ -160,7 +160,7 @@ export class AgentInfo extends Component {
           style: { maxWidth: 150 },
         },
         {
-          title: agent.version,
+          title: "CyberSentinal v4.9.2",//agent.version,
           description: 'Version',
           style: { maxWidth: 150 },
         },
@@ -184,7 +184,7 @@ export class AgentInfo extends Component {
           style: {},
         },
         {
-          title: agent.version,
+          title: "CyberSentinal v4.9.2",//agent.version,
           description: 'Version',
           style: { minWidth: 100 },
         },
